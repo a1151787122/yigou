@@ -1,0 +1,82 @@
+/* pages/user/user.wxss */
+.container{
+  height: 84.5vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100rpx 0;
+  background-color: var(--themeColor);
+  .userinfo{
+    .login{
+      background-color: #7bed9f;
+      text-shadow: 2px 2px 5px #FFBD27;
+      width: 200rpx;
+      height: 200rpx;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 200rpx;
+      font-size: 52rpx;
+      font-weight: 600;
+      color: #747d8c;
+    }
+    .page{
+      .userBaseInfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        image{
+          overflow: hidden;
+          width: 200rpx;
+          height: 200rpx;
+          margin: 20rpx;
+          border-radius: 50%;
+        };
+        text{
+          font-size: 40rpx;
+          font-weight: 600;
+          text-align: center;
+        }
+      }
+    }
+    .userApp{
+      border-bottom-color: #636e72 ;
+      border-block-style: dotted;
+      border-top: none;
+      width: 100vw;
+      display: flex;
+      margin: 30rpx;
+      navigator{
+        width: 100%;
+        padding: 40rpx;
+        flex:1;
+
+        align-items: center;
+        .userAppIner{
+          display: flex;
+          flex-direction: column;
+          width: 85%;
+          image{
+            width: 100%;
+          }
+          text{
+            text-align: center;
+            width: 100%;
+            font-size: 25rpx;
+            font-weight: 600;
+            color: #636e72;
+          }
+        }
+      }
+    }
+    .userApp2{
+      display: flex;
+      width: 100vw;
+      image{
+        width: 25vw;
+        height: 25vw;
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+<view class="container">
+  <view class="userinfo">
+    <block wx:if="{{!hasUserInfo}}">
+
+      <view class="login">
+        <view wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile">
+          登 录       
+        </view>
+        <view wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+          登 录
+        </view>
+      </view>
+    </block>
+<!-- 已经登陆 -->
+    <block wx:else>
+
+      <view class="page">
+        <view class="userBaseInfo">
+          <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+          <text class="userinfo-nickname">{{userInfo.nickName}}(lv.3)</text>
+        </view>
+      </view>
+
+      <!-- 用户记录信息（1.浏览记录 2.收藏 3. ） -->
+      <view class="userApp">
+  
+        <navigator>
+          <view class="userAppIner">
+            <image mode="widthFix" src="/icon/friends.png"></image>
+            <text>好友</text>
+          </view>
+        </navigator>
+
+        <navigator>
+          <view class="userAppIner">
+            <image mode="widthFix" src="/icon/record.png"></image>
+            <text>记录</text>
+          </view>
+        </navigator>
+
+        <navigator>
+          <view class="userAppIner">
+            <image mode="widthFix" src="/icon/collect.png"></image>
+            <text>收藏</text>
+          </view>
+        </navigator>
+
+        <navigator>
+          <view class="userAppIner">
+            <image mode="widthFix" src="/icon/quanzi.png"></image>
+            <text>圈文</text>
+          </view>
+        </navigator>
+
+      </view>
+      <view class="userApp">
+        
+        <navigator>
+          <view class="userAppIner">
+            <image mode="widthFix" src="/icon/kefu.png"></image>
+            <text>足迹</text>
+          </view>
+        </navigator>
+
+        <navigator>
+          <view class="userAppIner">
+            <image mode="widthFix" src="/icon/kefu.png"></image>
+            <text>足迹</text>
+          </view>
+        </navigator>
+
+        <navigator>
+          <view class="userAppIner">
+            <image mode="widthFix" src="/icon/kefu.png"></image>
+            <text>足迹</text>
+          </view>
+        </navigator>
+
+        <navigator>
+          <view class="userAppIner">
+            <image mode="widthFix" src="/icon/kefu.png"></image>
+            <text>足迹</text>
+          </view>
+        </navigator>
+
+      </view>
+
+
+    </block>
+  </view>
+</view>

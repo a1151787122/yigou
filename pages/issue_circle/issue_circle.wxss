@@ -1,0 +1,30 @@
+.page-body {
+  background-color: var(--themeColor);
+  height: 100vh;
+}
+.page-body .circleImage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.page-body .circleImage image {
+  border-radius: 20rpx;
+  width: 33.33vw;
+  height: 33.33vw;
+}
+.page-body .textarea-wrp {
+  background-color: #fff;
+  font-size: 42rpx;
+  border-radius: 30rpx;
+}
+.page-body .confirm {
+  margin-top: 50rpx;
+  height: 100rpx;
+}
+.page-body .confirm button {
+  height: 100rpx;
+  background-color: #eee;
+  font-size: 50rpx;
+  color: #555;
+  border-radius: 40rpx;
+}

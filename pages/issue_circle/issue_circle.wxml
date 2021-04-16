@@ -1,0 +1,27 @@
+<view class="page-body">
+  <!-- 图片 -->
+
+  <view class="circleImage">
+    <view
+      wx:for="{{img_src}}"
+      wx:key="filePath"
+    >
+      <image src="{{item.filePath}}"></image>
+    </view>
+  </view>
+
+  <form bindsubmit="submitGoodInfo">
+    <!-- 文案 -->
+    <view class="textarea-wrp">
+          <textarea placeholder="请尽情描述  (O.O)" confirm-type="send" id="text" auto-focus="true" style="height: 8em" name="text"/>
+    </view>
+
+    <!-- 提交 -->
+    <view class="confirm">
+      <button form-type="submit">
+        发布GO~
+      </button>
+    </view>
+  </form>
+
+</view>

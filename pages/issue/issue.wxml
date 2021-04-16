@@ -1,0 +1,30 @@
+
+<view class="bg_image">
+  <image src="/img/issue_bg_img.jpeg" ></image>
+</view>
+
+<view class="issue">
+  <!-- 发布圈子 -->
+    <view class="issue_circle" bindtap="handleIssueCircle">
+      <view class="good_img">
+        <image src="/icon/circle.png" mode="widthFix"></image>
+      </view>
+      <view class="good_text">
+        <text>-->我要发圈子~</text>
+      </view>
+    </view>
+    
+  <!-- 发布闲置 -->
+    <view class="issue_good" bindtap="handleIssueGood">
+      <view class="good_img">
+        <image src="/icon/pakage.png" mode="widthFix"></image>
+      </view>
+
+      <view class="good_text">
+        <text>-->我要发闲置~</text>
+      </view>
+    </view>
+    
+
+
+</view>

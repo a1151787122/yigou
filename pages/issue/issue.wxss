@@ -1,0 +1,57 @@
+.bg_image {
+  width: 100%;
+  height: 70vh;
+}
+.bg_image image {
+  width: 100%;
+  height: 70vh;
+}
+.issue {
+  background-color: var(--themeColor);
+  width: 100vw;
+  height: 30vh;
+}
+.issue .issue_circle {
+  display: flex;
+  height: 15vh;
+}
+.issue .issue_circle .good_img {
+  flex: 2;
+}
+.issue .issue_circle .good_img image {
+  float: right;
+  width: 11vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.issue .issue_circle .good_text {
+  flex: 3;
+}
+.issue .issue_circle .good_text text {
+  color: #333;
+  font-size: 45rpx;
+  line-height: 15vh;
+  font-weight: 600;
+}
+.issue .issue_good {
+  display: flex;
+  height: 15vh;
+}
+.issue .issue_good .good_img {
+  flex: 2;
+}
+.issue .issue_good .good_img image {
+  float: right;
+  width: 11vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.issue .issue_good .good_text {
+  flex: 3;
+}
+.issue .issue_good .good_text text {
+  color: #333;
+  font-size: 45rpx;
+  line-height: 15vh;
+  font-weight: 600;
+}
